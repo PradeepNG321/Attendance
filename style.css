@@ -1,34 +1,25 @@
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-main {
-  flex: 1;
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
   padding: 30px;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
 }
 
 form {
@@ -38,19 +29,16 @@ form {
 
 label {
   margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: bold;
+  color: #333333;
 }
 
 input {
   padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-input:focus {
-  border-color: #003366;
-  outline: none;
+  border-radius: 5px;
 }
 
 button {
@@ -58,27 +46,18 @@ button {
   padding: 12px;
   background-color: #003366;
   color: white;
-  border: none;
-  border-radius: 4px;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0055aa;
+  background-color: #002244;
 }
 
 #responseMsg {
   margin-top: 20px;
   font-weight: bold;
-  color: green;
   text-align: center;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px;
 }
