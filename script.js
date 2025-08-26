@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwntjCcAiBlAkSbJ9J7BauGZ_uG6jjNirXB-YxGirgvr_JCDRF1eyKxNw-2zLyOsod6/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzwj8GG97zB7BlmdInrCfrs0_8gJO8g85z8QDmZOyI/dev';
 
 document.getElementById('attendanceForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -30,3 +30,4 @@ document.getElementById('attendanceForm').addEventListener('submit', function(e)
     console.error(error);
   });
 });
+
