@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Attendance Form</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBD University Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>BBD University - Student Form</h1>
+    <form id="myForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
 
-  <header>
-    <h1>Student Attendance Form</h1>
-  </header>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-  <main>
-    <form id="attendanceForm">
-      <label for="name">Student Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter full name" required>
-
-      <label for="email">Email ID</label>
-      <input type="email" id="email" name="email" placeholder="Enter email" required>
-
-      <label for="class">Class</label>
-      <input type="text" id="class" name="class" placeholder="Enter class (e.g. 10th)" required>
-
-      <label for="section">Section</label>
-      <input type="text" id="section" name="section" placeholder="Enter section (e.g. A)" required>
-
-      <label for="roll">Roll Number</label>
-      <input type="text" id="roll" name="roll" placeholder="Enter roll number" required>
-
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
 
       <button type="submit">Submit</button>
     </form>
 
     <p id="responseMsg"></p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 School Name. All rights reserved.</p>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
